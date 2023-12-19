@@ -1,0 +1,87 @@
+.dialog {
+  display: none;
+}
+
+.dialog i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.opened {
+  display: block;
+}
+
+.dialogContent {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fdfdfd;
+  padding: 20px;
+  z-index: 2;
+  width: 450px;
+  border-radius: 7px;
+}
+
+.dialogContent .contentWrapper {
+  margin-top: 20px;
+}
+
+.dialogMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000c5;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dialogHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.dialogContent .closeIcon {
+  color: #333333;
+  cursor: pointer;
+}
+
+.dialogContent h4 {
+  font-size: 17px;
+  margin-top: 3px;
+  font-weight: 400;
+  color: rgb(60, 160, 60);
+}
+
+.dialogContent p {
+  text-align: left !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.dialogContent .contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentWrapper .titlePicture {
+  cursor: pointer;
+}
+
+.contentWrapper .titleIcon {
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .dialogContent {
+    width: 95%;
+  }
+}

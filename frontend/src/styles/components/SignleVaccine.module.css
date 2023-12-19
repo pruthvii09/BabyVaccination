@@ -1,0 +1,105 @@
+/* Vaccination */
+.vaccination {
+  margin-top: 35px;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 20px 15px;
+  color: #333333;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.484);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.169);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.749);
+  flex: 1;
+}
+.vaccination .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.heading button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(60, 128, 60);
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.vaccination i {
+  color: #f49a2b;
+}
+
+.vaccination .vaccineEdit {
+  color: #1a1367;
+  cursor: pointer;
+}
+
+.vaccination h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.vaccination table {
+  width: 100%;
+}
+
+.vaccination table th,
+.vaccination table td {
+  text-align: left;
+  /* width: fit-content; */
+}
+
+.vaccination table td {
+  font-size: 12px;
+  font-weight: 600;
+  font-weight: 500;
+}
+
+th,
+td {
+  /* width: fit-content; */
+  padding: 5px;
+  border: 1px solid;
+}
+
+td div {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.completed {
+  background: #25c10d;
+}
+
+.incompleted {
+  background: #e31212;
+}
+.buttons {
+  width: 100%;
+  justify-content: center;
+  gap: 190px;
+  display: flex;
+}
+.buttons button {
+  padding: 4px 12px;
+  color: white;
+  border: none;
+  font: bold;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .vaccination {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .profile_container table {
+    width: 100%;
+  }
+  table th:nth-last-child(2),
+  table tr td:nth-last-child(2) {
+    display: none;
+  }
+}
